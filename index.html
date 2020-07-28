@@ -1,51 +1,47 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> NewYorkTimes </title>
         <link rel="stylesheet" href="./assets/stylesheet/styles.css">
+        <link rel="stylesheet" href="./assets/fonts/fonts.css">
         <script src="https://kit.fontawesome.com/e53eea7683.js" crossorigin="anonymous"></script>
+        
     </head>
     <body>
        <div class="wrapper">
           <nav class="main-nav flex">
             <!--containig a div which contains the logo the search the menu -->
                 
-                <div class="menu-search">
-                    
-                   <buttom> <i class="fas fa-bars"></i></buttom>
-                    
-                 <button type="submit">
-                   <i class="fas fa-search"></i>
-                 </button>
-                    
-                </div>
-                
-               <div class="main-logo">
-                 <img href="#" src="./assets/NewYorkTimes.svg">
-               </div>
-                
-               <div class="login-subscribe-btns">
-                   
-                   <button>subscribe now</button>
-                   <button>log in</button>
-                   
-               </div>
+            <div class="menu-search">
+                <button type="button"> <i class="fas fa-bars"></i></button>
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="main-logo">
+                <img alt="logo" src="./assets/NewYorkTimes.svg">
+            </div>
+            <div class="login-subscribe-btns flex ">
+                <button type="button" >subscribe now</button>
+                <button type="button" >log in</button>
+            </div>
         </nav>
         <!--end of nav-->
         
       <!--first ads space-->
-         <section class="ads flex">
-             <h6>ADVERTISEMENT</h6>
+        <section class="ads flex">
+            <h6>ADVERTISEMENT</h6>
                         
-          </section>
+        </section>
         
-         <div class="main-title-fig">
-                     
-                    <h4>Space Ripples Reveal Big Bang’s Smoking Gun</h4>
-                
-                   <figure class="article-figure article-main-image-caption">
-                     <img class="center" href="#" src="./assets/main-article-img.jpg">
+        <div class="main-title-fig">
+                <h4>Space Ripples Reveal Big Bang’s Smoking Gun</h4>
+                <figure class="article-figure">
+                    <img class="center"  src="./assets/main-article-img.jpg">
                     
-                     <figcaption>
+                <figcaption>
                        Alan Guth was one of the first physicists to hypothesize the existence of inflation, which explains how the universe expanded so uniformly and so quickly in the instant after the Big Bang 13.8 billion years ago.<span>Rick Friedman for The New York Times</span>
                    </figcaption>
               </figure>
@@ -53,20 +49,20 @@
                 
            
            
-                    <div id="author" >
+                    <div class="center" id="author" >
                     <!--contains the author name , date ,social btns-->
                     <p>By <span>Dennis Overbye</span></p>
                     
                     <div class="date-share">
                         <ul id="date-list" >
                             <li id="time" >
-                            <time>March 17, 2014</time>
+                            <div>March 17, 2014</div>
                             </li>
                             
                            
                             <li>
                                <a href="#">
-                                <i class="fab fa-facebook icon"></i>
+                                <i class="fab fa-facebook-f icon"></i>
                             </a>
                             </li>
                             
@@ -96,13 +92,21 @@
                             
                             <li>
                                 <a href="#">
-                                <i class="far fa-comment-alt" id="icon-box" ><span id="icon-num" >615</span></i>
-                            </a>
+                                  <span class="comment-box-icon fa-stack">
+    
+                                    <span id="box-n"  class="far fa-comment-alt fa-stack-1x">
+                                    </span>
+                                    <sub id="num-com" class="fa-stack-1x">
+                                      615   
+                                    </sub>
+                                  </span>
+  
+                               </a>
                             </li>
                         </ul>
                        
                         
-                       
+                     <!--  <i class="far fa-comment-alt " id="icon-box" ><span id="icon-num" ></span></i>-->
                         
                     </div>
                     </div>
@@ -143,28 +147,28 @@
         
        <!-- start of part two of the article-->
          <section class="article">
-                        <p>
-                            On Monday, Dr. Guth’s starship came in. Radio astronomers reported that they had seen the beginning of the Big Bang, and that his hypothesis, known undramatically as inflation, looked right.
-                        </p>
-                        <p>
-                            Reaching back across 13.8 billion years to <a href="#">the first sliver of cosmic time</a> with telescopes at the South Pole, a team of astronomers led by John M. Kovac of the Harvard-Smithsonian Center for Astrophysics detected ripples in the fabric of space-time — so-called <a href="#">gravitational waves</a> — the signature of a universe being wrenched violently apart when it was roughly a trillionth of a trillionth of a trillionth of a second old. They are the long-sought smoking-gun evidence of inflation, proof, Dr. Kovac and his colleagues say, that Dr. Guth was correct.
-                        </p>
+            <p>
+                On Monday, Dr. Guth’s starship came in. Radio astronomers reported that they had seen the beginning of the Big Bang, and that his hypothesis, known undramatically as inflation, looked right.
+            </p>
+            <p>
+                Reaching back across 13.8 billion years to <a href="#">the first sliver of cosmic time</a> with telescopes at the South Pole, a team of astronomers led by John M. Kovac of the Harvard-Smithsonian Center for Astrophysics detected ripples in the fabric of space-time — so-called <a href="#">gravitational waves</a> — the signature of a universe being wrenched violently apart when it was roughly a trillionth of a trillionth of a trillionth of a second old. They are the long-sought smoking-gun evidence of inflation, proof, Dr. Kovac and his colleagues say, that Dr. Guth was correct.
+            </p>
                         
-                        <div id="subscribe">
-                            <li>
-                                Thanks for reading The Times.
-                            </li>
-                            <a href="#">Subscribe to The Times</a>
-                        </div>
+            <div id="subscribe">
+                <p>
+                    Thanks for reading The Times.
+                </p>
+                <a href="#">Subscribe to The Times</a>
+            </div>
                         
-                        <p>
-                            Inflation has been the workhorse of cosmology for 35 years, though many, including Dr. Guth, wondered whether it could ever be proved.
-                        </p>
-                        <p>
-                            If corroborated, Dr. Kovac’s work will stand as a landmark in science comparable to the recent discovery of dark energy pushing the universe apart, or of the Big Bang itself. It would open vast realms of time and space and energy to science and speculation.
-                        </p>
-                        <p>
-                            Confirming inflation would mean that the universe we see, extending 14 billion light-years in space with its hundreds of billions of galaxies, is only an infinitesimal patch in a larger cosmos whose extent, architecture and fate are unknowable. Moreover, beyond our own universe there might be an endless number of other universes bubbling into frothy eternity, like a pot of pasta water boiling over.
+            <p>
+                Inflation has been the workhorse of cosmology for 35 years, though many, including Dr. Guth, wondered whether it could ever be proved.
+            </p>
+            <p>
+                If corroborated, Dr. Kovac’s work will stand as a landmark in science comparable to the recent discovery of dark energy pushing the universe apart, or of the Big Bang itself. It would open vast realms of time and space and energy to science and speculation.
+            </p>
+            <p>
+                    Confirming inflation would mean that the universe we see, extending 14 billion light-years in space with its hundreds of billions of galaxies, is only an infinitesimal patch in a larger cosmos whose extent, architecture and fate are unknowable. Moreover, beyond our own universe there might be an endless number of other universes bubbling into frothy eternity, like a pot of pasta water boiling over.
                         </p>
                         
                     </section>
@@ -320,9 +324,10 @@
                         <!--=============================-->
                         <!--youtube video-->
             <figure id="YT-video">       
-               <iframe width="670" height="330" src="https://www.youtube.com/embed/ZlfIVEy_YOA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <!--<iframe width="670" height="330" src="https://www.youtube.com/embed/ZlfIVEy_YOA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                <iframe width="600" height="319" src="https://www.youtube.com/embed/ZlfIVEy_YOA"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <figcaption>
-                Stanford Professor Andrei Linde celebrates physics breakthrough <small>Video by StanfordUniversity</small>
+                Stanford Professor Andrei Linde celebrates physics breakthrough <small style="color:rgb(142,142,142)">Video by StanfordUniversity</small>
                </figcaption>
             </figure>  
             <br>
@@ -399,7 +404,7 @@
                         <p>
                           “The South Pole is the closest you can get to space and still be on the ground,” Dr. Kovac said. He has been there 23 times, he said, wintering over in 1994. “I’ve been hooked ever since,” he said.
                         </p>
-                        <figure id="figure2" class="center article-figure">
+                        <figure id="figure2" class="center ">
                            <img src="./assets/figure2.jpg">
                     
                            <figcaption>
@@ -496,7 +501,6 @@
                             “If you trace your cosmic roots,” said Abraham Loeb, a Harvard-Smithsonian astronomer who was not part of the team, “you wind up at inflation.”
                         </p>
                         
-                         <!-- ========= ===============  ============ -->
            <!-- ===  DIV for the most end of the article === --->
            
            
@@ -505,32 +509,31 @@
                    <a href="#">Order Reprints</a> | <a href="#">Today’s Paper</a> | <a href="#">Subscribe</a>
                </p>
            
-           <!-- ========= ===============  ============ -->
+           
            <!-- ===  END DIV for the most end of the article === --->
            
                         
                 </section>
                 <!-- end #9 article-->
-                              
+
         <!--========== article comment-share =====-->
-           <div class="article-comment-share flex center">
-               <div >
-                   <button id="comment-btn" >
-                      <B> READ 615 COMMENTS</B>
-                   </button>
-               </div>
-               <ul   >
-                <li>
-                    <a class="comment-list" href="#">
-                        <i class="fab fa-facebook icon"></i>
-                    </a>
+        <div class="article-comment-share flex center">
+            <div >
+                <button id="comment-btn" type="button" >
+                    <B> READ 615 COMMENTS</B>
+                </button>
+        </div>
+            <ul   >
+            <li>
+                <a class="comment-list" href="#">
+                    <i class="fab fa-facebook-f icon"></i>
+                </a>
                 </li>      
                 <li>
                     <a  class="comment-list" href="#">
                        <i class="fab fa-twitter icon"></i>
                     </a>
                    </li>
-                  
                   <li>
                     <a  class="comment-list" href="#">
                         <i class="fas fa-envelope icon"></i>
@@ -544,10 +547,12 @@
                    </li>            
                </ul>
            </div>
-                
-           
-           
-          
+           <!--     
+           <br>
+           <svg>
+           <path fill-rule="evenodd" clip-rule="evenodd" d="M4.775 14.163V7.08h1.923l.255-2.441H4.775l.004-1.222c0-.636.06-.977.958-.977H6.94V0H5.016c-2.31 0-3.123 1.184-3.123 3.175V4.64H.453v2.44h1.44v7.083h2.882z" fill="#000"></path>
+           </svg>
+          -->
            
            
            <!-- ========= ===============  ============ -->
@@ -557,7 +562,7 @@
            <section class="suggested-articles">
                <aside class="suggested-articles-aside">
                    <header>
-                       <h4>Most Popular</h4>
+                       <h2>Most Popular</h2>
                    </header>
                    <div class="aside-content">
                        <a href="#">
@@ -623,64 +628,64 @@
                       <div class="suggested-articles-box">
                        <figure>
                            <img src="./assets/suggested-articles-box-img-1.jpg">
-                           <figcaption>Miguel Porlan</figcaption>
+                           <figcaption>SARAH SCOLES</figcaption>
                        </figure>
-                       <h6>
-                           3 Great Mysteries About Life on Mars
-                       </h6>
-                      <time>July 24</time>
+                       <h3>
+                           The Doctor From Nazi Germany and the Search for Life on Mars
+                       </h3>
+                      <div>July 24</div>
                    </div>
                       <div class="suggested-articles-box">
                        <figure>
                            <img src="./assets/suggested-articles-box-img-2.jpg">
-                           <figcaption>Miguel Porlan</figcaption>
-                       </figure>
-                       <h6>
-                           3 Great Mysteries About Life on Mars
-                       </h6>
-                      <time>July 24</time>
-                   </div>
-                      <div class="suggested-articles-box">
-                       <figure>
-                           <img src="./assets/suggested-articles-box-img-3.jpg">
-                           <figcaption>Miguel Porlan</figcaption>
+                           <figcaption>Becky Lebowitz</figcaption>
                        </figure>
                        <h3>
                            3 Great Mysteries About Life on Mars
                        </h3>
-                      <time>July 24</time>
+                      <div>July 24</div>
+                   </div>
+                      <div class="suggested-articles-box">
+                       <figure>
+                           <img src="./assets/suggested-articles-box-img-3.jpg">
+                           <figcaption>ALEX MARSHALL</figcaption>
+                       </figure>
+                       <h3>
+                           China Will Answer ‘Heavenly Question’: Can It Land on Mars?
+                       </h3>
+                      <div>July 24</div>
                    </div>
                    </div> 
                    <div class="box space-astronomy-box-wrap-row2 flex">
                       <div class="suggested-articles-box">
                        <figure>
                            <img src="./assets/suggested-articles-box-img-4.jpg">
-                           <figcaption>Miguel Porlan</figcaption>
+                           <figcaption>RICHARD SANDOMIR</figcaption>
                        </figure>
                        <h3>
-                           3 Great Mysteries About Life on Mars
-                       </h3>
-                      <time>July 24</time>
+                           How the United Arab Emirates Set Its Sights on Mars
+                          </h3>
+                      <div>July 24</div>
                    </div>
                       <div class="suggested-articles-box">
                        <figure>
                            <img src="./assets/suggested-articles-box-img-5.jpg">
-                           <figcaption>Miguel Porlan</figcaption>
+                           <figcaption>JOSHUA BARONE</figcaption>
                        </figure>
                        <h3>
-                           3 Great Mysteries About Life on Mars
+                           Closest Pictures Ever Taken of Sun Show Tiny Campfire Flares
                        </h3>
-                      <time>July 24</time>
+                      <div>July 24</div>
                    </div>
                       <div class="suggested-articles-box">
                        <figure>
                            <img src="./assets/suggested-articles-box-img-6.jpg">
-                           <figcaption>Miguel Porlan</figcaption>
+                           <figcaption>DAVID BROOKS</figcaption>
                        </figure>
                        <h3>
-                           3 Great Mysteries About Life on Mars
+                           Comet NEOWISE: How to See It in Night Skies
                        </h3>
-                      <time>July 24</time>
+                      <div>July 24</div>
                    </div>
                   </div>
                  </div>
@@ -688,39 +693,39 @@
                   <div class="editors-picks">
                       <header>
                       <a href="#">
-                          <p>More in Space and Astronomy</p>
+                          <p>Editors’ Picks</p>
                        </a>
                    </header>
                       <div class="box suggested-articles-box-wrap flex">
                         <div class="suggested-articles-box">
                        <figure>
                            <img src="./assets/suggested-articles-box-img-7.jpg">
-                           <figcaption>Miguel Porlan</figcaption>
+                           <figcaption>JENNY GROSS</figcaption>
                        </figure>
                        <h3>
-                           3 Great Mysteries About Life on Mars
+                           1922: The Year That Transformed English Literature 
                        </h3>
-                      <time>July 24</time>
+                      <div>May 14</div>
                    </div>
                         <div class="suggested-articles-box">
                        <figure>
                            <img src="./assets/suggested-articles-box-img-8.jpg">
-                           <figcaption>Miguel Porlan</figcaption>
+                           <figcaption>SAM ROBERTS</figcaption>
                        </figure>
                        <h3>
-                           3 Great Mysteries About Life on Mars
+                           For Exercise, Nothing Like the Great Outdoors 
                        </h3>
-                      <time>July 24</time>
+                      <div>July 27</div>
                    </div>
                         <div class="suggested-articles-box">
                        <figure>
                            <img src="./assets/suggested-articles-box-img-9.jpg">
-                           <figcaption>Miguel Porlan</figcaption>
+                           <figcaption>GLENN KENNY</figcaption>
                        </figure>
                        <h3>
-                           3 Great Mysteries About Life on Mars
+                           Matisse Thybulle Is the Breakout (Mini-Movie) Star of the N.B.A. Bubble
                        </h3>
-                      <time>July 24</time>
+                      <div>July 16</div>
                    </div>
                       </div>
                   </div>
@@ -733,11 +738,13 @@
            <!-- ========= ===============  ============ -->
                <!-- == END suggested articles DIV == --->
            <!-- ========= ===============  ============ -->
-             <!--footer-->                
+             <!--footer--> 
+          
              <footer id="footer-main" >
-                <header id="footer-header" >
-                    <img href="#" src="./assets/NewYorkTimes.svg">
-                </header>
+                <div id="footer-header" >
+                    <img src="./assets/NewYorkTimes.svg" alt="logo" >
+                </div>
+                 <br>
                 <section id="footer-main-sect" >
                     <section class="section" >
                         
@@ -804,7 +811,7 @@
                             <li><a href="#">Travel</a></li>
                         </ul>
                     </section>
-                    <section class="section"  >
+                    <section id="more-section" class="section"  >
                         <h4>MORE</h4>
                         <ul>
                             <li><a href="#">Reader Center</a> </li>    
@@ -826,9 +833,10 @@
                         <h4>SUBSCRIBE</h4>
                         <ul>
                             <li><a href="#"> <span><i class="far fa-newspaper"></i></span> <B> Home Delivery</B></a> </li>    
-                            <li><a href="#"><span><img class="img-icon" src="/assets/first-letter-2.svg" alt=""></span><B> Digital Subscriptions</B></a></li>      
-                            <li><a href="#"><span><img class="img-icon" src="/assets/game-icon.svg" alt=""></span><B>Games</B></a></li>      
-                            <li><a href="#"><span><i class="fas fa-utensils"></i></span><B> Cooking</B></a></li>  
+                            <li><a href="#"><span><img class="img-icon" src="/assets/first-letter-2.svg" alt="icon"></span><B> Digital Subscriptions</B></a></li>      
+                            <li><a href="#"><span><img class="img-icon" src="/assets/game-icon.svg" alt="icon"></span><B>  Games</B></a></li>      
+                            <li><a href="#"><span><i class="fas fa-utensils"></i></span><B>  Cooking</B></a></li>  
+
                             <li id="top-small" ><a href="#"> <small>Email Newsletters</small></a></li>
                             <li><a href="#"> <small>Corporate Subscriptions</small></a></li> 
                             <li id="last-small" ><a href="#"> <small >Education Rate</small></a></li> 
@@ -843,19 +851,19 @@
                 </section>
                 <nav class="section center" id="footer-b" >
                     <ul id="l-f-b">
-                        <li><a href="#">© 2020 The New York Times Company</a></li>
-                        <li><a href="#">NYTCo</a></li> 
-                        <li><a href="#">Contact Us</a></li> 
-                        <li><a href="#">Work with us</a></li> 
-                        <li><a href="#">Advertise</a></li> 
-                        <li><a href="#">T Brand Studio</a></li> 
-                        <li><a href="#">Your Ad Choices</a></li> 
-                        <li><a href="#">Privacy</a></li> 
-                        <li><a href="#">Terms of Service</a></li> 
-                        <li><a href="#">Terms of Sale</a></li>   
-                        <li><a href="#">Site Map</a></li> 
-                        <li><a href="#">Help</a></li> 
-                        <li><a href="#">Subscriptions</a></li> 
+                        <li><a href="#"><sub>© 2020 The New York Times Company</sub></a></li>
+                        <li><a href="#"><sub>NYTCo</sub></a></li> 
+                        <li><a href="#"><sub>Contact Us</sub></a></li> 
+                        <li><a href="#"><sub>Work with us</sub></a></li> 
+                        <li><a href="#"><sub>Advertise</sub></a></li> 
+                        <li><a href="#"><sub>T Brand Studio</sub></a></li> 
+                        <li><a href="#"><sub>Your Ad Choices</sub></a></li> 
+                        <li><a href="#"><sub>Privacy</sub></a></li> 
+                        <li><a href="#"><sub>Terms of Service</sub></a></li> 
+                        <li><a href="#"><sub>Terms of Sale</sub></a></li>   
+                        <li><a href="#"><sub>Site Map</sub></a></li> 
+                        <li><a href="#"><sub>Help</sub></a></li> 
+                        <li><a href="#"><sub>Subscriptions</sub></a></li> 
                     </ul>
                 </nav>
             </footer>             
